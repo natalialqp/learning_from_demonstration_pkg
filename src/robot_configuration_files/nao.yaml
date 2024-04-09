@@ -1,0 +1,118 @@
+name: "NAO"  #H25
+DOF-head: 2
+DOF-right-arm: 5
+DOF-left-arm: 5
+
+base:
+  base-distance: [0, 0, 0]
+  base-angle: [0, 0, 0]
+
+distances-head:
+  torso: [0, 0, 100]
+  head-yaw: [0, 0, 26.5]
+  head-pitch: [0, 0, 0]
+  camera-top: [50.71, 0, 17.74]
+
+angles-head:
+  torso: [0, 0, 0]
+  head-yaw: [0, 0, 0]
+  head-pitch: [0, 0, 0]
+  camera-top: [0, 0.0209435, 0]
+
+distances-left-arm:
+  torso: [0, 0, 100]
+  shoulder-pitch: [0, 98, 0]
+  shoulder-roll: [0, 0, 0]
+  elbow-yaw: [105, 15, 0]
+  elbow-roll: [0, 0, 0]
+  wrist-yaw: [55.95, 0, 0]
+  hand: [57.75, 0, -12.31]
+
+angles-left-arm:
+  torso: [0, 0, 0]
+  shoulder-pitch: [0, 0, 0]
+  shoulder-roll: [0, 0, 0]
+  elbow-yaw: [0, 0, 0]
+  elbow-roll: [0, 0, 0]
+  wrist-yaw: [0, 0, 0]
+  hand: [0, 0, 0]
+
+distances-right-arm:
+  torso: [0, 0, 100]
+  shoulder-pitch: [0, -98, 0]
+  shoulder-roll: [0, 0, 0]
+  elbow-yaw: [105, -15, 0]
+  elbow-roll: [0, 0, 0]
+  wrist-yaw: [55.95, 0, 0]
+  hand: [57.75, 0, -12.13]
+
+angles-right-arm:
+  torso: [0, 0, 0]
+  shoulder-pitch: [0, 0, 0]
+  shoulder-roll: [0, 0, 0]
+  elbow-yaw: [0, 0, 0]
+  elbow-roll: [0, 0, 0]
+  wrist-yaw: [0, 0, 0]
+  hand: [0, 0, 0]
+
+#from http://doc.aldebaran.com/1-14/family/robots/joints_robot.html [min, max] in degrees
+
+real-angles-left-arm:
+  shoulder-pitch: [-119.5, 119.5]
+  shoulder-roll: [-18, 76]
+  elbow-yaw: [-119.5, 119.5]
+  elbow-roll: [-88.5, -2]
+  wrist-yaw: [-104.5, 104.5]
+
+real-angles-right-arm:
+  shoulder-pitch: [-119.5, 119.5]
+  shoulder-roll: [-76, 18]
+  elbow-yaw: [-119.5, 119.5]
+  elbow-roll: [2, 88.5]
+  wrist-yaw: [-104.5, 104.5]
+
+real-angles-head:
+  head-yaw: [-119.5, 119.5]
+  head-pitch: [-38.5, 29.5] # (-) is to the back
+
+robot-dict:
+  jointLeft_0: [0, 0, 0]
+  jointLeft_1: [0, 0, 0]
+  jointLeft_2: [0, 0, 0]
+  jointLeft_3: [0, 0, 0]
+  jointLeft_4: [0, 0, 0]
+  jointLeft_5: [0, 0, 0]
+  jointLeft_6: [0, 0, 0]
+
+  jointRight_0: [0, 0, 0]
+  jointRight_1: [0, 0, 0]
+  jointRight_2: [0, 0, 0]
+  jointRight_3: [0, 0, 0]
+  jointRight_4: [0, 0, 0]
+  jointRight_5: [0, 0, 0]
+  jointRight_6: [0, 0, 0]
+
+  jointHead_0: [0, 0, 0]
+  jointHead_1: [0, 0, 0]
+  jointHead_2: [0, 0, 0]
+  jointHead_3: [0, 0, 0]
+
+robot-angular-dict:
+  jointLeft_0: [0, 0, 0]
+  jointLeft_1: [0, 0, 0]
+  jointLeft_2: [0, 0, 0]
+  jointLeft_3: [0, 0, 0]
+  jointLeft_4: [0, 0, 0]
+
+  jointRight_0: [0, 0, 0]
+  jointRight_1: [0, 0, 0]
+  jointRight_2: [0, 0, 0]
+  jointRight_3: [0, 0, 0]
+  jointRight_4  : [0, 0, 0]
+
+  jointHead_0: [0, 0, 0]
+  jointHead_1: [0, 0, 0]
+
+  # robot's workspace limits
+  # lowEdge = np.array([-300, -350, -200])
+  # highEdge = np.array([300, 350, 400])

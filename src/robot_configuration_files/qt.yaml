@@ -1,0 +1,98 @@
+name: "QTrobot"
+DOF-head: 2
+DOF-right-arm: 3
+DOF-left-arm: 3
+
+base:
+  base-distance: [0, 0, 0]
+  base-angle: [0, 0, 0]
+
+distances-head:
+  head-yaw: [0, 0, 338]
+  collar: [0, 0, 58]
+  head-pitch: [0, 0, 38.2]
+  camera: [94, 0, 162]
+
+angles-head:
+  head-yaw: [0, 0, 0]
+  collar: [0, 0, 0]
+  head-pitch: [0, 0, 0]
+  camera: [-1.5708, 0, -1.5708]
+
+distances-left-arm:
+  collar: [0, 0, 396]
+  shoulder-pitch: [0, 80, 0]
+  shoulder-roll: [0, 44.5, 0]
+  elbow: [0, 77.08, 0]
+  hand: [0, 184, 0]
+
+angles-left-arm:
+  collar: [0, 0, 0]
+  shoulder-pitch: [0, -0, 0]
+  shoulder-roll: [0, -1.5708, 0]
+  elbow: [0, 0, 0]
+  hand: [1.5708, 0, 1.5708]
+
+distances-right-arm:
+  collar: [0, 0, 396]
+  shoulder-pitch: [0, -80, 0]
+  shoulder-roll: [0, 44.5, 0]
+  elbow: [0, 77.08, 0]
+  hand: [0, 184, 0]
+
+angles-right-arm:
+  collar: [0, 0, 0]
+  shoulder-pitch: [3.1416, 0, 0]
+  shoulder-roll: [0, -1.5708, 0]
+  elbow: [0, 0, 0]
+  hand: [-1.5708, 0, 1.5708]
+
+#from https://docs.luxai.com/docs/v1/modules/motors [min, max] in degrees
+
+real-angles-left-arm:
+  shoulder-pitch: [-140, 140]
+  shoulder-roll: [-75, 7]
+  elbow: [-90, -7]
+
+real-angles-right-arm:
+  shoulder-pitch: [-140, 140]
+  shoulder-roll: [-75, 7]
+  elbow: [-90, -7]
+
+real-angles-head:
+  head-yaw: [-90, 90]
+  head-pitch: [-15, 25]
+
+robot-dict:
+  jointLeft_0:
+  jointLeft_1:
+  jointLeft_2:
+  jointLeft_3:
+  jointLeft_4:
+
+  jointRight_0:
+  jointRight_1:
+  jointRight_2:
+  jointRight_3:
+  jointRight_4:
+
+  jointHead_0:
+  jointHead_1:
+  jointHead_2:
+  jointHead_3:
+
+robot-angular-dict:
+  jointLeft_0:
+  jointLeft_1:
+  jointLeft_2:
+
+  jointRight_0:
+  jointRight_1:
+  jointRight_2:
+
+  jointHead_0:
+  jointHead_1:
+
+# world range
+  #   lowEdge = np.array([-450, -450, 100])
+  #   highEdge = np.array([450, 450, 700])
